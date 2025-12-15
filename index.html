@@ -9,14 +9,53 @@
 <body>
  
    <!-- Simple Navigation -->
-<nav style="margin-bottom: 20px;">
-    <ul style="list-style: none; padding: 0; display: flex; gap: 20px;">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="index2.html">Page 2</a></li>
-        <li><a href="index3.html">Page 3</a></li>
-    </ul>
+<!-- Navigation -->
+<nav class="navbar">
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About Me</a></li>
+    <li><a href="index2.html">Page 2</a></li>
+    <li><a href="index3.html">Page 3</a></li>
+  </ul>
 </nav>
+
+<!-- CSS for the navbar -->
+<style>
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #2c3e50; /* Dark blue-gray background */
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 8px 15px;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px;
+}
+
+.nav-links li a:hover {
+    background-color: #ecf0f1; /* Light background on hover */
+    color: #2c3e50; /* Text color changes on hover */
+}
+</style>
+
  
     <hr>
  
@@ -113,6 +152,7 @@
  
 </html>
  
+
 
 
 
