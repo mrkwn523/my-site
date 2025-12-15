@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Profile</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style3.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<header class="navbar">
+    <h2>
+        <a href="#home">Home</a> |
+        <a href="#about">About Me</a>
+    </h2>
+    <button id="themeBtn">Dark Mode</button>
+</header>
+
+<hr>
+
+<!-- MAIN CONTENT -->
+<section id="main-content">
+
+<!-- LEFT COLUMN -->
+<div class="left-column" id="home">
+    <img class="profile-img" src= "C:\Users\Markwen Dalde\Documents\webprog_lab3\profile.png" alt="Profile Image">
+
+    <h2>John Markwen P. Dalde</h2>
+    <span class="job-title" id="jobTitle">Penetration Tester</span><br><br>
+    <button id="editJobBtn">Edit Job Title</button>
+
+    <hr>
+
+    <div class="contact-section">
+        <h3>Contact</h3>
+        <p>Email: <a href="mailto:jhnmrkwndld711@gmail.com">jhnmrkwndld711@gmail.com</a></p>
+        <p>Phone No.: 09145145162</p>
+    </div>
+
+    <hr>
+
+    <button id="toggleSkillsBtn">Hide Skills</button>
+
+    <div class="skills-box" id="skillsSection">
+        <h3>Skills</h3>
+        <p>Networking, Scripting and Programming, Problem-Solving, Report Writing</p>
+    </div>
+
+    <hr>
+
+    <div>
+        <h3>Experience / Achievements</h3>
+        <ul>
+            <li>Completed hands-on penetration testing projects using Kali Linux.</li>
+            <li>Created basic network security assessments for school projects.</li>
+            <li>Finished a Web Development mini-project using HTML, CSS, and JavaScript.</li>
+            <li>Completed online cybersecurity and ethical hacking courses.</li>
+        </ul>
+    </div>
+</div>
+
+<!-- RIGHT COLUMN -->
+<div class="right-column" id="about">
+    <h2>About Me</h2>
+    <p>
+        Hello! I am John Markwen P. Dalde, a passionate learner and aspiring
+        Penetration Tester. I enjoy exploring cybersecurity concepts and improving my skills.
+    </p>
+
+    <hr>
+
+    <h2>Message Me</h2>
+
+    <form class="message-form" action="submit.php" method="post" onsubmit="return validateForm()">
+
+        Name:<br>
+        <input type="text" id="nameField"><br><br>
+
+        Email:<br>
+        <input type="email" id="emailField"><br><br>
+
+        Message:<br>
+        <textarea id="msgBox" maxlength="200"></textarea>
+        <p>Characters left: <span id="counter">200</span></p>
+
+        <input type="submit" value="Send">
+    </form>
+
+    <!-- EXTRA FEATURE: Random Cybersecurity Tip -->
+<button id="tipBtn">Show Cybersecurity Tip</button>
+<p id="tipText"></p>
+
+</div>
+</section>
+
+<hr>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <strong>WebProg - Web Programming 2025</strong>
+    <p id="dateDisplay"></p>
+</footer>
+
+</body>
+</html>

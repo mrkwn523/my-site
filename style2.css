@@ -1,0 +1,189 @@
+/* GENERAL */
+
+body {
+
+    font-family: Times New Roman, serif;
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+/* NAVIGATION */
+
+.navbar {
+
+    padding: 15px;
+
+    background: #f3f3f3;
+
+    text-align: center;
+
+}
+
+.navbar a {
+
+    text-decoration: none;
+
+    padding: 10px 15px;
+
+    color: red;
+
+    font-weight: bold;
+
+}
+
+.navbar a:hover {
+
+    color: grey;
+
+}
+
+/* FLEX LAYOUT */
+
+#main-content {
+
+    display: flex;
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 20px;
+
+}
+
+.left-column {
+
+    flex: 1;
+
+    padding: 20px;
+
+}
+
+.right-column {
+
+    flex: 1;
+
+    padding: 20px;
+
+}
+
+/* PROFILE SECTION */
+
+.profile-img {
+
+    width: 180px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+}
+
+.job-title {
+
+    color: gray;
+
+    font-style: italic;
+
+}
+
+/* CONTACT SECTION */
+
+.contact-section p,
+
+.contact-section a {
+
+    margin: 5px 0;
+
+    text-decoration: none;
+
+    color: black;
+
+}
+
+.contact-section a:hover {
+
+    color: blue;
+
+}
+
+/* SKILLS SECTION */
+
+.skills-box {
+
+    background: lightgray;
+
+    padding: 15px;
+
+    border-radius: 5px;
+
+}
+
+/* ABOUT ME */
+
+#about p {
+
+    line-height: 1.5em;
+
+    text-align: justify;
+
+    margin-bottom: 20px;
+
+}
+
+/* MESSAGE FORM */
+
+.message-form input[type="text"],
+
+.message-form input[type="email"] {
+
+    width: 95%;
+
+    padding: 10px;
+
+    box-sizing: border-box;
+
+    margin-top: 5px;
+
+    border: 1px solid #ccc;
+
+}
+
+.message-form input[type="submit"] {
+
+    padding: 10px 20px;
+
+    border-radius: 4px;
+
+    cursor: pointer;
+
+    border: none;
+
+    background: black;
+
+    color: white;
+
+    transition: 0.3s;
+
+}
+
+.message-form input[type="submit"]:hover {
+
+    background: green;
+
+}
+
+/* FOOTER */
+
+.footer {
+
+    text-align: center;
+
+    background: #f1f1f1;
+
+    padding: 15px;
+
+}
